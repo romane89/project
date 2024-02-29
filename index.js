@@ -67,3 +67,7 @@ app.delete('/posts/:id', function(req, res){
 app.listen(PORT, function(){
     console.log(`example app listening on port ${PORT}!`);
 })
+
+app.get('/auth/signin', function(req,res){
+    res.send('This is the sign in page');
+})
